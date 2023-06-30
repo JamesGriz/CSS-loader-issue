@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-import '../global.css'
+// import '../global.css'
 
 export const metadata: Metadata = {
   title: 'My Page Title',
