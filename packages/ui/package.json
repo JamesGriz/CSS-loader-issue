@@ -1,0 +1,37 @@
+{
+  "name": "ui",
+  "version": "0.0.0",
+  "main": "./index.tsx",
+  "types": "./index.tsx",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint *.ts*",
+    "test": "jest --passWithNoTests"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/pro-duotone-svg-icons": "^6.2.1",
+    "@fortawesome/pro-light-svg-icons": "^6.2.1",
+    "@fortawesome/pro-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@radix-ui/react-slot": "^1.0.1",
+    "@u-wave/react-vimeo": "^0.9.10",
+    "class-variance-authority": "^0.6.0",
+    "react-youtube": "^10.1.0",
+    "@types/react-slick": "^0.23.10",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "autoprefixer": "^10.4.7",
+    "config": "*",
+    "eslint": "^8.22.0",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.3.2",
+    "tsconfig": "*",
+    "typescript": "4.9.5"
+  }
+}

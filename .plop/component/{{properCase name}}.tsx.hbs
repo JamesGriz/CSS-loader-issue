@@ -1,0 +1,39 @@
+import { forwardRef } from "react"
+{{#if includeCva}}
+import { VariantProps, cva, cx } from 'class-variance-authority'
+
+const {{properCase name}}Variants = cva('{{properCase name}}', {
+  variants: {},
+  compoundVariants: [],
+  defaultVariants: {}
+})
+{{/if}}
+
+interface {{properCase name}}Props {{#if includeCva}}extends VariantProps<typeof {{properCase name}}Variants>{{/if}} {
+  {{#each props}}
+  {{this.definition}}
+  {{/each}}
+}
+
+//Make sure the ref type is correct and update the description accordingly
+/** Generic description, update me */
+export const {{properCase name}} = forwardRef<HTMLDivElement, {{properCase name}}Props>(
+  ({
+  {{#each props}}
+  {{this.name}},
+  {{/each}}
+  ...rest
+  }, ref) => {
+
+  return (
+    <div 
+      {{#if includeCva}}
+      className={cx({{properCase name}}Variants({}))}
+      {{/if}}
+      ref={ref} 
+      {...rest}>
+    </div>
+  )
+})
+
+{{properCase name}}.displayName = "{{properCase name}}"

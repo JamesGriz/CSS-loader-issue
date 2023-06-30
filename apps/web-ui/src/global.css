@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+span {
+  display: block;
+}
+
+@layer base {
+  :root {
+    /* Brand colors */
+    --color-primary: theme('colors.brown.300');
+    /* #A98759 */
+    --color-primary-10: theme('colors.brown.300/.1');
+    /* #A98759 */
+    --color-primary-25: theme('colors.brown.300/.25');
+    /* #A98759 */
+
+    --color-secondary: theme('colors.brown.100');
+    /* #EFE5DA */
+    --color-secondary-25: theme('colors.brown.100/.25');
+    /* #EFE5DA */
+
+    --color-tertiary: theme('colors.brown.500');
+    /* #271B17 */
+    --color-tertiary-25: theme('colors.brown.500/.25');
+    /* #271B17 */
+
+    --color-quaternary: theme('colors.white');
+    /* #FFFFFF */
+    --color-quaternary-25: theme('colors.white/.25');
+    /* #FFFFFF */
+
+    --accent-primary: theme('colors.brown.400');
+    /* #32231E */
+    --accent-primary-25: theme('colors.brown.400/.25');
+    /* #32231E */
+    --accent-primary-50: theme('colors.brown.400/.50');
+    /* #32231E */
+    --accent-primary-75: theme('colors.brown.400/.75');
+    /* #32231E */
+
+    --accent-secondary: theme('colors.brown.200');
+    /* #B58C67 */
+    /*  Status colors */
+    /* NA for now */
+
+    .dark {
+      /* Brand colors */
+      --color-primary: theme('colors.brown.100');
+      --color-primary-25: theme('colors.brown.100/.25');
+
+      --color-secondary: theme('colors.brown.500');
+      --color-secondary-25: theme('colors.brown.500/.25');
+
+      --color-tertiary: theme('colors.brown.500');
+      --color-tertiary-25: theme('colors.brown.500/.25');
+
+      --color-quaternary: theme('colors.white');
+      --color-quaternary-25: theme('colors.white/.25');
+
+      --accent-primary: theme('colors.brown.400');
+      --accent-secondary: theme('colors.brown.200');
+      /*  Status colors */
+      /* NA for now */
+    }
+
+    .light {
+      /* No need to set anything as this will use the default color option for now */
+    }
+  }
+
+  body {
+    /* Resets */
+    background: theme('colors.secondary');
+    font: theme('fontFamily.sans');
+    color: theme('colors.primary');
+    @apply antialiased;
+  }
+}
+
+/* Slider Carousel styles */
+
+.SliderCarousel .slick-slide {
+  @apply max-w-md p-4;
+}
+
+/* styles for Slider Minimal */
+
+.SliderMinimal .slick-dots li {
+  @apply list-none m-0 mr-1 h-[1px] bg-primary w-4 opacity-20 cursor-pointer;
+}
+
+.SliderMinimal .slick-dots li.slick-active {
+  @apply opacity-100;
+}
+
+.SliderFull .slick-slide div {
+  @apply flex;
+}
+/* The following comments are just a ref and will be removed later on */
+
+/* Primary: */
+/* HEX: #A98759 */
+/* RGB: rgb(169, 135, 89) */
+
+/* Secondary: */
+/* HEX: #EFE5DA */
+/* RGB: rgb(239, 229, 218) */
+
+/* Tertiary: */
+/* HEX: #271B17 */
+/* RGB: rgb(39, 27, 23) */
+
+/* Accent Brown 1: */
+/* HEX: #32231E */
+/* RGB: rgb(50, 35, 30) */
+
+/* Accent Brown 2: */
+/* HEX: #B58C67 */
+/* RGB: rgb(181, 140, 103) */
+
+/* Accent Brown Transparent: */
+/* HEX: #B58C67 20% */
+/* RGBA: rgb(181, 140, 103) */
+
+/* BG-Primary */
+/* #EFE5DA */
+
+/* BG-Secondary */
+/* #32231E */
+
+/* BG-Tertiary */
+/* #271B17 */
+
+/* Text-primary */
+/* HEX: #A98759 */
+
+/* text-secondary */
+/* HEX: #EFE5DA */
+
+/* text-secondary */
+/* HEX: #FFFFFF */
+
+.gutters {
+  @apply px-md-m md:px-md;
+}
+
+.container {
+  @apply mx-auto;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@fa/web-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "test:cypress": "start-server-and-test \"(cd ../../apps/web-ui && next start)\" http://localhost:3000 \"cypress run\""
+  },
+  "author": "Sergio Pellegrini",
+  "license": "ISC",
+  "dependencies": {
+    "@fa/frontend-ui": "*"
+  },
+  "devDependencies": {
+    "cypress": "^10.6.0",
+    "start-server-and-test": "^1.14.0"
+  }
+}
